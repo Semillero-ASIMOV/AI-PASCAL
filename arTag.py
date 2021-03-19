@@ -3,7 +3,7 @@ import argparse
 import numpy as np
 import cv2
 import cv2.aruco as aruco
-from cv2 import 
+from cv2 import *
 cap = cv2.VideoCapture(0)
 def centroid(*points):
     x_coords = [p[0] for p in points]
