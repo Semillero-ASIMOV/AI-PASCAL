@@ -1,15 +1,17 @@
 import cv2
-def video_reader():
-    cam = cv2.VideoCapture(0)
-    detector = cv2.QRCodeDetector()
-    while True:
-        _, img = cam.read()
-        data, bbox, _ = detector.detectAndDecode(img)
+cap = cv2.VideoCapture(0)
+detector = cv2.QRCodeDetector()
+while True:
+    _, img = cap.read()
+    data, bbox, _ = detector.detectAndDecode(img)
+    if bbox is not None:
+        for i in range(len(bbox)):
+            # Aca se deberian dibujar los bordes del qr pero aun no funciona
+            cv2.line(img, tuple(bbox[i][0]), tuple(bbox[(i+1) % len(bbox)][0]), color=(255, 0, 0), thickness=2)
         if data:
-            print("QR Code detected-->", data)
-        cv2.imshow("img", img)    
-        if cv2.waitKey(1) == ord("Q"):
-            break
-    cam.release()
-    cv2.destroyAllWindows()
-video_reader()
+            print("[+] QR Code detected, data:", data)
+    cv2.imshow("img", img)    
+    if cv2.waitKey(1) == ord("q"):
+        break
+cap.release()
+cv2.destroyAllWindows()
