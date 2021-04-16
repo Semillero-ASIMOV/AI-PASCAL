@@ -1,7 +1,9 @@
 import wave
-import speech_recognition as sr
 import alsaaudio
+import time
 
+import speech_recognition as sr
+import numpy as np
 
 def playAudio(self):
     # open audio file and device
@@ -22,44 +24,78 @@ def playAudio(self):
 
     audio_file.close()
 
-# Class for blinking the leds
 
-#def escucharPascal(self):
+import speech_recognition as sr
+import time
+from subprocess import call
 
-r=sr.Recognizer()
+trigger = "hola pascal"
 
-with sr.Microphone() as source:
-    print("Di algo...")
+recognizer = sr.Recognizer()
 
-    r.adjust_for_ambient_noise(source)
-    audio = r.listen(source)
+print("Beginning to listen...")
 
-    try:
+def listen():
+        with sr.Microphone() as source:
+                recognizer.adjust_for_ambient_noise(source)
+                audio = recognizer.listen(source)
+                try:
+                    str=recognizer.recognize_google(audio, language='es-ES')
+                    return str.lower()
+                except sr.UnknownValueError:
+                    print("No entiendo bien")
+                return ""
 
-        text = r.recognize_google(audio, language='es-ES')
+def menu():
 
-        print("Dijiste: {}".format(text.lower()))
+    ubicacion=np.array(["necesito ubicarme","ayudame a ubicarme","quiero ubicarme","como ubicarme","donde ubicarme","ubicación" ])
+    bus = np.array(["necesito el bus","donde es el bus","cuando sale el otro bus","bus"])
+    saludos = np.array(["como estas","como vas","que tal tu dia","como estuvo tu dia"])
 
-        if text.lower() == "hola pascal":
-            print("En que te puedo Ayudar")
+    text=listen()
+    print(text.lower())
 
-            playAudio('file.wav')
+    if text == "" :
+        return False
 
-            print("AUDIO END")
+    if text.lower() in ubicacion:
+        print("Claro Dime donde quieres ir")
 
-        if text.lower() == "prueba chat":
-            playAudio('audio.wav')
+        playAudio('audios/file.wav')
 
-            print("AUDIO END")
+        print("AUDIO END")
 
-        if text.lower() == "semillero":
-            playAudio('file.wav')
+    if text.lower() in saludos:
+        print("Muy Bien Y Tu")
 
-            print("AUDIO END")
+        playAudio('audios/file.wav')
 
-    except :
-        print("No entiendo")
+        print("AUDIO END")
 
+    if text.lower() in bus:
+        print("A Donde Vas")
+
+        playAudio('audios/t3.wav')
+        print("AUDIO END")
+    return True
+
+
+
+print("Trying to always listen...")
+a=1
+while a==1:
+        str=listen()
+        print(str)
+        if str == trigger:
+            print("ENTRO a Trigger")
+            bool = menu()
+
+            if bool:
+                a=2
+
+        #time.sleep(0.2)
+
+print("SALE")
 
 
 
