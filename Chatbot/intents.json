@@ -1,0 +1,521 @@
+{
+"intents": [
+    {
+      "tag": "saludos",
+      "patterns": [
+        "Hola",
+        "Hey",
+        "Hola Robot",
+        "Hola Pascal",
+        "Buen dia",
+        "Que tal",
+        "Buenas",
+        "Hola amigo",
+        "Que hay de nuevo",
+        "Me da gusto verte"
+      ],
+      "responses": [
+        "Hola",
+        "Hola Amigo",
+        "Hola que puedo hacer por ti",
+        "Hola estoy para ayudar",
+        "Hola como puedo ayudarte"
+      ]
+    },
+    {
+      "tag": "Despedidas",
+      "patterns": [
+        "Chao",
+        "chao",
+        "show",
+        "hasta luego",
+        "te veo luego",
+        "adios",
+        "Hasta pronto"
+      ],
+      "responses": [
+        "te deseo un buen dia",
+        "feliz dia",
+        "que tengas un buen dia",
+        "hasta pronto"
+      ]
+    },
+    {
+     "tag": "Estado",
+      "patterns": [
+        "como estas",
+        "como va todo",
+        "como has estado",
+        "como te ha ido",
+        "que tal tu dia"
+      ],
+      "responses": [
+        "muy bien gracias",
+        "super bien",
+        "bien gracias",
+        "estoy bien gracias"
+      ]
+    },
+
+    {
+      "tag": "Gratitud",
+      "patterns": [
+        "Gracias",
+        "gracias por tu ayuda",
+        "Muchas Gracias",
+        "eres muy amable"
+      ],
+      "responses": [
+        "con gusto",
+        "para eso estoy",
+        "estoy a tu servicio"
+      ]
+    },
+    {
+      "tag": "Navegacion_Biblioteca",
+      "patterns": [
+        "necesito ir a la biblioteca",
+        "llevame a la biblioteca",
+        "acompañame a la biblioteca",
+        "vamos a la biblioteca"
+      ],
+      "responses": [
+        ""
+      ]
+    },
+    {
+      "tag": "Ubicacion_Biblioteca",
+      "patterns": [
+        "donde esta la biblioteca",
+        "en que bloque esta la biblioteca",
+        "en que piso encuentro esta la piblioteca",
+        "donde es la biblioteca",
+        "donde queda la biblioteca",
+        "donde puedo encontrar la biblioteca",
+        "en que piso esta la biblioteca"
+
+      ],
+      "responses": [
+        "la biblioteca esta junto al bloque C en el primer piso"
+      ]
+    },
+    {
+      "tag": "Informacion_Biblioteca",
+      "patterns": [
+        "donde puedo pedir un libro",
+        "necesito conseguir un libro",
+        "donde puedo alquilar un libro",
+        "donde puedo encontrar un libro",
+        "quiero devolver este libro",
+        "estoy buscando un libro"
+      ],
+      "responses": [
+        "en la biblioteca te pueden ayudar"
+      ]
+    },
+    {
+      "tag": "Informacion_ATM",
+      "patterns": [
+        "necesito retirar",
+        "necesito retirar dinero",
+        "necesito un cajero automatico",
+        "que cajeros automaticos hay",
+        "que cajeros hay",
+        "de cual banco es el cajero autimatico"
+      ],
+      "responses": [
+        "Un cajero Bancolombia puede servirte"
+      ]
+    },
+    {
+      "tag": "Navegacion_ATM",
+      "patterns": [
+        "Llevame a un cajero",
+        "Acompañame a un cajero",
+        "Llevame a un cajero automatico",
+        "Acompañame a un cajero automatico",
+        "Vamos a retirar dinero"
+      ],
+      "responses": [
+        ""
+      ]
+    },
+    {
+      "tag": "Ubicacion_ATM",
+      "patterns": [
+        "Donde hay un cajero automatico",
+        "Donde encuentro un cajero automatico",
+        "Donde esta el cajero automatico",
+        "Donde puedo encuentrar el cajero",
+        "En que piso hay un cajero"
+      ],
+      "responses": [
+        "El cajero automatico esta junto al bloque C en el primer piso"
+      ]
+    },
+
+
+     {
+      "tag": "Navegacion_Maquinas_Dispensadoras",
+      "patterns": [
+        "necesito ir a la maquina de cafe",
+        "llevame a la maquina dispensadora",
+        "acompañame a comprar un cafe a la maquina",
+        "vamos a la la maquina dispensadora",
+        "quiero ir a la maquina de dispensadora",
+        "llevame a la maquina a comprar algo",
+        "acompañame a comprar algo a la maquina",
+        "vamos a la la maquina dispensadora a comprar algo"
+      ],
+      "responses": [
+        ""
+      ]
+    },
+    {
+      "tag": "Navegacion_Internacionalizacion",
+      "patterns": [
+        "Llevame a internacionalizacion",
+        "Acompañame a internacionalizacion",
+        "Llevame a internacionalizacion",
+        "Acompañame a la oficina de internacionalizacion",
+        "Vamos a internacionalizacion"
+      ],
+      "responses": [
+        ""
+      ]
+    },
+
+    {
+      "tag": "Navegacion_Admisiones",
+      "patterns": [
+        "Llevame a admisiones y registro",
+        "Acompañame a admisiones y registro",
+        "Llevame a admisiones",
+        "Acompañame a la oficina de admisiones y registro",
+        "Vamos a admisiones y registro"
+      ],
+      "responses": [
+        ""
+      ]
+    },
+
+    {
+      "tag": "Navegacion_Auditorio",
+      "patterns": [
+        "Llevame a el auditorio",
+        "Acompañame a el auditorio",
+        "Llevame a el teatro",
+        "Acompañame a el teatro",
+        "Vamos a el auditorio"
+      ],
+      "responses": [
+        ""
+      ]
+    },
+
+    {
+      "tag": "Navegacion_Papeleria",
+      "patterns": [
+        "Llevame a la paleleria",
+        "Acompañame a la paleleria",
+        "Llevame a la fotocopiadora",
+        "Acompañame a la fotocopiadora",
+        "Vamos a la paleleria",
+        "Vamos a comprar un lapiz",
+        "Llevame a comprar un lapicero",
+        "Acompañame a fotocopiar un documento"
+      ],
+      "responses": [
+        ""
+      ]
+    },
+
+    {
+      "tag": "Ubicacion_Internacionalizacion",
+      "patterns": [
+        "donde esta internacionalizacion",
+        "en que bloque esta internacionalziacion",
+        "en que piso encuentro la oficina de internacionalizacion",
+        "donde es internacionalizacion",
+        "donde queda internacionalizacion",
+        "en que piso esta internacionalizacion"
+
+      ],
+      "responses": [
+        "internacionalizacion esta junto al bloque C en el primer piso"
+      ]
+    },
+
+    {
+      "tag": "Ubicacion_Gimnasio",
+      "patterns": [
+        "donde esta el gimnasio",
+        "en que bloque esta el gimnasio",
+        "en que piso encuentro el gimnasio",
+        "donde es el gimnasio",
+        "donde queda el gimnasio",
+        "en que piso queda el gimnasio"
+
+      ],
+      "responses": [
+        "El gimnasio esta junto al lago y las canchas"
+      ]
+    },
+
+    {
+      "tag": "Ubicacion_Cafeterias",
+      "patterns": [
+        "donde esta la cafeteria",
+        "en que bloque esta el restaurante",
+        "en que piso encuentro la cafeteria",
+        "donde es el restaurante",
+        "donde queda la cafeteria",
+        "en que piso queda el restaurante"
+
+      ],
+      "responses": [
+        "Las cafeterias y restaurantes estan en el primer piso, el sotano, junto a los laboratorios y al frente de las canchas"
+      ]
+    },
+
+    {
+      "tag": "Ubicacion_Canchas",
+      "patterns": [
+        "donde esta la cancha de futbol",
+        "en que bloque esta la cancha de tennis",
+        "en que piso encuentro la cancha de basquetbol",
+        "donde es la cancha de voleibol",
+        "donde queda la cancha",
+        "en que piso queda la cancha de futbol"
+
+      ],
+      "responses": [
+        "Las canchas estan junto al lago"
+      ]
+    },
+
+
+    {
+      "tag": "Ubicacion_Maquinas",
+      "patterns": [
+        "donde estan las maquinas",
+        "en que bloque esta la maquina de cafe",
+        "en que piso encuentro la maquina de mecato",
+        "donde esta la maquina vending",
+        "donde quedan la maquinitas dispensadora",
+        "en que piso quedan las maquinas dispensadoras"
+
+      ],
+      "responses": [
+        "Las maquinas estan en la calle de la cultura al lado de la biblioteca"
+      ]
+    },
+
+    {
+      "tag": "Ubicacion_Auditorio",
+      "patterns": [
+        "donde esta el auditorio",
+        "en que bloque esta el teatro",
+        "en que piso encuentro el auditorio principal",
+        "donde es el teatro de la universidad",
+        "donde queda el auditorio",
+        "en que piso queda el auditorio nuevo"
+
+      ],
+      "responses": [
+        "El auditorio esta en el bloque B, al final de la calle de la cultura"
+      ]
+    },
+
+    {
+      "tag": "Ubicacion_Contabilidad",
+      "patterns": [
+        "donde esta la oficina de contabilidad",
+        "en que bloque esta contabilidad",
+        "en que piso encuentro la oficina de contabilidad",
+        "donde es contabilidad",
+        "donde queda la oficina de contabilidad",
+        "en que piso queda la oficina de contabilidad"
+
+      ],
+      "responses": [
+        "La oficina de contabilidad se encuentra en el segundo piso, en la mitad del pasillo"
+      ]
+    },
+
+    {
+      "tag": "Ubicacion_Icetex",
+      "patterns": [
+        "donde esta la oficina de icetex",
+        "en que bloque esta icetex",
+        "en que piso encuentro la oficina de icetex",
+        "donde es icetex",
+        "donde queda la oficina de icetex",
+        "en que piso queda la oficina de icetex"
+
+      ],
+      "responses": [
+        "La oficina de icetex se encuentra en el segundo piso, en la mitad del pasillo"
+      ]
+    },
+
+    {
+      "tag": "Ubicacion_Rectoria",
+      "patterns": [
+        "donde esta la oficina de rectoria",
+        "en que bloque esta rectoria",
+        "en que piso encuentro la oficina de rectoria",
+        "donde es rectoria",
+        "donde queda la oficina de rectoria",
+        "en que piso queda la oficina de rectoria"
+
+      ],
+      "responses": [
+        "La oficina de rectoria se encuentra en el segundo piso, en la mitad del pasillo"
+      ]
+    },
+
+    {
+      "tag": "Ubicacion_Investigacion",
+      "patterns": [
+        "donde esta la oficina de investigacion",
+        "en que bloque esta investigacion",
+        "en que piso encuentro la oficina de investigacion",
+        "donde es investigacion",
+        "donde queda la oficina de investigacion",
+        "en que piso queda la oficina de investigacion"
+
+      ],
+      "responses": [
+        "La oficina de investigacion se encuentra en el segundo piso, en la mitad del pasillo"
+      ]
+    },
+
+    {
+      "tag": "Ubicacion_Editorial",
+      "patterns": [
+        "donde esta la oficina de editorial",
+        "en que bloque esta la editorial",
+        "en que piso encuentro la oficina de editorial",
+        "donde es la editorial",
+        "donde queda la oficina de editorial",
+        "en que piso queda la oficina de editorial"
+
+      ],
+      "responses": [
+        "La oficina de editorial se encuentra en el segundo piso, en la mitad del pasillo"
+      ]
+    },
+
+    {
+      "tag": "Ubicacion_Admisiones",
+      "patterns": [
+        "donde esta la oficina de admisiones",
+        "en que bloque esta admisiones y registro",
+        "en que piso encuentro la oficina de registro",
+        "donde es admisiones y registro",
+        "donde queda la oficina de admisiones",
+        "en que piso queda la oficina de registro"
+
+      ],
+      "responses": [
+        "La oficina de admisiones y registro se encuentra en el primer piso, en la calle de la cultura"
+      ]
+    },
+
+    {
+      "tag": "Ubicacion_Ascensor",
+      "patterns": [
+        "donde estan los ascensores",
+        "en que bloque hay ascensores",
+        "donde son los ascensores",
+        "donde quedan los ascensores",
+        "en que pisos hay ascensores"
+
+      ],
+      "responses": [
+        "Los ascensores se encuentran en la parte lateral de cada bloque, en cada uno de los pisos"
+      ]
+    },
+
+    {
+      "tag": "Ubicacion_Baños",
+      "patterns": [
+        "donde estan los baños",
+        "en que bloque hay baños",
+        "donde son los baños",
+        "donde quedan los baños",
+        "en que pisos hay baños"
+
+      ],
+      "responses": [
+        "Los baños se encuentran al lado de las escaleras de cada piso, en los dos bloques, en la entrada de la biblioteca y en las canchas"
+      ]
+    },
+
+     {
+      "tag": "Informacion_Cafeterias",
+      "patterns": [
+        "donde puedo conseguir un pastel",
+        "necesito conseguir comida",
+        "donde puedo comprar un almuerzo",
+        "quiero comer algo",
+        "estoy buscando algo para comer"
+      ],
+      "responses": [
+        "En las cafeterias ubicadas en el sotano, en el primer piso y cerca de las canchas te pueden ayudar"
+      ]
+    },
+
+
+    {
+      "tag": "Informacion_Papeleria",
+      "patterns": [
+        "necesito comprar un lapicero",
+        "donde encuentro una tabla periodica",
+        "necesito imprimir un documento",
+        "tengo que fotocopiar algo",
+        "donde puedo imprimir algo",
+        "tengo que comprar utiles"
+      ],
+      "responses": [
+        "En la papeleria te pueden ayudar"
+      ]
+    },
+
+
+
+    {
+      "tag": "void",
+      "patterns": [
+        "",
+        "void"
+      ],
+      "responses": [
+        ""
+      ]
+    },
+
+
+
+    {
+      "tag": "Informacion_Maquinas",
+      "patterns": [
+        "necesito comprar un cafe",
+        "quiero comprar mecato",
+        "necesito comprar algo rapido",
+        "donde venden cafe",
+        "donde puedo comprar el cafe",
+        "donde puedo comprar un tinto"
+      ],
+      "responses": [
+        "En las maquinas dispensadoras puedes comprar"
+      ]
+    }
+
+  ]
+}
+
+
+
+
